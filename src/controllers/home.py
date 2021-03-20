@@ -3,4 +3,4 @@ from src import app
 
 @app.route('/')
 def index():
-    return "FLASK"
+    return "Ingrese al Puerto: 3000/db"
