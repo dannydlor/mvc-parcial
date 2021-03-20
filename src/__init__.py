@@ -1,9 +1,9 @@
-from flask import Flask, render_template
-import os
-app = Flask(__name__, template_folder= 'views')
+from flask import Flask
 
-#importar los controllers
+app = Flask(__name__, template_folder='views')
+
 from src.controllers import *
+from src.routes import *
 
-def create_app():
-    app.run(debug=True, port=5000)
+def start_app():
+    app.run(port = 3000, debug=True)
